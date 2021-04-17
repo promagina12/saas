@@ -109,6 +109,10 @@ img.laptop {
   margin-right: 22px;
 }
 
+.free-trial {
+  background: #572bd9;
+}
+
 .main-button {
   min-height: 68px;
   min-width: 222px;
@@ -362,5 +366,411 @@ img.laptop {
   border: 5px;
   border-radius: 50%;
   margin-top: -4.5em;
+}
+
+.pricing-plan {
+  background: #191e3e;
+  color: #fff;
+  text-align: center;
+}
+
+.pricing-plan h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 77px;
+  min-width: 826px;
+  min-height: 64px;
+  letter-spacing: 0;
+  text-align: center;
+  font-style: normal;
+}
+
+.pricing-plan p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  min-width: 763px;
+  min-height: 52px;
+  letter-spacing: 0;
+  text-align: center;
+  font-style: normal;
+}
+
+.pricing-plan .pricing-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin: 0 120px 0 120px;
+}
+
+.pricing-plan .pricing-container .second-pricing-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pricing-plan .pricing-container .third-pricing-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.pricing-plan .pricing-container .pricing1 {
+  border-radius: 10px;
+  margin: 0 15px 0 15px;
+  min-width: 440px;
+  min-height: 731px;
+}
+
+.pricing-plan .pricing-container .pricing1 .level-1 {
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 36px;
+  font-style: normal;
+  min-height: 30px;
+  min-width: 97px;
+  font-weight: 300;
+}
+
+.pricing-plan .pricing-container .pricing1 .level-2 {
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 36px;
+  font-style: normal;
+  min-height: 30px;
+  min-width: 97px;
+  font-weight: 300;
+}
+
+.pricing-plan .pricing-container .pricing1 .level-3 {
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 36px;
+  font-style: normal;
+  min-height: 30px;
+  min-width: 97px;
+  font-weight: 300;
+}
+
+.pricing-plan .pricing-container .pricing1 .first-pricing {
+  font-weight: 300;
+  font-size: 84px;
+  line-height: 101px;
+  letter-spacing: 0;
+  min-height: 84px;
+  min-width: 140px;
+  font-style: normal;
+  margin: -30px;
+}
+
+.pricing-plan .pricing-container .pricing1 .second-pricing {
+  font-weight: 300;
+  font-size: 84px;
+  line-height: 101px;
+  letter-spacing: 0;
+  min-height: 84px;
+  min-width: 140px;
+  font-style: normal;
+  margin: -30px;
+}
+
+.pricing-plan .pricing-container .pricing1 .third-pricing {
+  font-weight: 300;
+  font-size: 84px;
+  line-height: 101px;
+  letter-spacing: 0;
+  min-height: 84px;
+  min-width: 140px;
+  font-style: normal;
+  margin: -30px;
+}
+
+.pricing-plan .pricing-container .pricing1 .first {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0;
+  min-height: 20px;
+  min-width: 190px;
+  font-style: normal;
+  margin: 32px 0 53px 0;
+}
+
+.pricing-plan .pricing-container .pricing1 .second {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0;
+  min-height: 52px;
+  min-width: 347px;
+  font-style: normal;
+  padding: 50px;
+  margin-top: -50px;
+}
+
+.pricing-plan .pricing-container .pricing1 .second-sec {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0;
+  min-height: 52px;
+  min-width: 347px;
+  font-style: normal;
+  padding: 50px;
+  margin-top: -50px;
+}
+
+.pricing-plan .pricing-container .pricing-level-1 {
+  background: #fcfdff;
+  color: #000000;
+}
+
+.pricing-plan .pricing-container .pricing-level-2 {
+  background: #6837fa;
+}
+
+.pricing-plan .pricing-container .pricing-level-3 {
+  background: #fcfdff;
+  color: #000000;
+}
+
+.pricing-plan .pricing-container .pricing1 .text {
+  color: #7e92ac;
+}
+
+.pricing-plan .pricing-container .pricing1 .button-b {
+  margin: 40px 0 0 0;
+}
+
+.pricing-plan .pricing-container .pricing1 li {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 0;
+  margin-left: 150px;
+  margin-top: -15px;
+  list-style-type: none;
+  padding: 10px;
+  position: relative;
+}
+
+.pricing-plan .pricing-container .pricing1 li::before {
+  content: "";
+  left: -3em;
+  position: absolute;
+  width: 14px;
+  height: 11px;
+  background-image: url("../images/check-list.png");
+  background-size: contain;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+.faq h6 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 0;
+  min-width: 482px;
+  min-height: 30px;
+  margin-left: -170px;
+  padding: 0;
+}
+
+.faq p {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 0;
+  min-width: 538px;
+  min-height: 64px;
+  padding: 0;
+  margin-left: -170px;
+  margin-top: -65px;
+}
+
+.faq .container .faq-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.faq .container ul.faq-list li {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 0;
+  margin-left: 150px;
+  margin-top: -15px;
+  list-style-type: none;
+  padding: 10px;
+  position: relative;
+}
+
+.faq .container ul.faq-list li::before {
+  content: "";
+  left: -11em;
+  position: absolute;
+  width: 73px;
+  height: 70px;
+  background-image: url("../images/faq.png");
+  background-size: contain;
+  margin-left: -4px;
+  margin-top: 62px;
+}
+
+.faq .container .faq-header {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 0;
+  min-width: 800px;
+  min-height: 64px;
+  font-style: normal;
+}
+
+.faq .container p.faq-desc {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  min-width: 763px;
+  min-height: 52px;
+  font-style: normal;
+  margin: 0;
+}
+
+.drop-message h2 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 77px;
+  min-height: 64px;
+  min-width: 470px;
+  text-align: center;
+}
+
+.drop-message p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  min-width: 669px;
+  letter-spacing: 0;
+}
+
+.drop-message .container {
+  text-align: center;
+}
+
+.drop-message .container label {
+  display: block;
+}
+
+.drop-message input.button {
+  margin-top: 30px;
+}
+
+.drop-message .contact-form {
+  width: 704px;
+  margin: 0 58px 0 200px;
+}
+
+.drop-message .contact-form .email-holder {
+  border-radius: 10px;
+  height: 75px;
+  background-color: #fcfdff;
+  border: 1px solid #c3cce8;
+  width: 100%;
+  display: block;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.second-fourth-section {
+  background: #6837fa;
+  position: relative;
+  height: 629px;
+}
+
+.second-fourth-section .second-top-purple-curve {
+  height: 400px;
+  background-color: #6837fa;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.second-fourth-section .second-bottom-white-curve {
+  height: 100px;
+  background-color: #5b2aee;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.second-fourth-section .container {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  width: 734px;
+  height: 312px;
+  padding: 0;
+}
+
+.second-fourth-section .container .content-tittle {
+  text-align: center;
+  font-weight: 300;
+  font-size: 36px;
+  margin-bottom: -6px;
+  padding: 5px;
+  margin-top: 40px;
+}
+
+.ending .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.ending .container h6 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 36px;
+  min-height: 30px;
+  min-width: 236px;
+  text-align: left;
+}
+
+.ending .container .second-end {
+  margin-left: 190px;
+}
+
+.ending .container p {
+  text-align: left;
+}
+
+.ending .container li {
+  list-style-type: none;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  margin-left: 150px;
+  text-align: left;
+}
+
+.ending .container li a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

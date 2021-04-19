@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  min-width: 1920px;
 }
 
 body {
@@ -10,9 +11,9 @@ body {
 }
 
 .navbar {
-  background: #6837fa;
   padding: 1em;
   color: #ffff;
+  background: #6837fa;
 }
 
 .navbar a {
@@ -66,7 +67,18 @@ body {
 }
 
 .first {
-  margin: 8em;
+  margin-top: -54px;
+  background: #6837fa;
+  color: #fff;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  min-width: 1900px;
+  min-height: 854px;
+}
+
+.first .subhead-desc {
+  padding: 5px;
+  margin-top: -80px;
 }
 
 .subhead {
@@ -74,6 +86,9 @@ body {
   font-weight: 300;
   font-size: 64px;
   margin-bottom: -6px;
+  min-width: 871px;
+  min-height: 64px;
+  padding: 100px;
 }
 
 p {
@@ -81,8 +96,16 @@ p {
   margin-bottom: 51px;
 }
 
-img.laptop {
-  margin: 60px 15px auto 25px;
+.laptop {
+  padding: 50px;
+  text-align: center;
+  margin-top: -500px;
+}
+
+.inkyy {
+  text-align: center;
+  margin-top: -205px;
+  padding: 50px;
 }
 
 .button-container {
@@ -132,6 +155,26 @@ img.laptop {
   text-align: center;
 }
 
+.second-section .why-us-subhead {
+  padding: 50px;
+  font-size: 64px;
+  font-weight: 400;
+  min-width: 462px;
+  min-height: 64px;
+  letter-spacing: 0;
+  line-height: 77px;
+}
+
+.second-section .why-us-subhead-desc {
+  font-size: 20px;
+  font-weight: 300;
+  min-width: 584px;
+  min-height: 52px;
+  letter-spacing: 0;
+  line-height: 32px;
+  color: #7e92ac;
+}
+
 .second-section .second-section-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,6 +183,8 @@ img.laptop {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  min-height: 1000px;
+  min-width: 1920px;
 }
 
 .second-section .why-us {
@@ -267,6 +312,27 @@ img.laptop {
   margin-bottom: -6px;
 }
 
+.fourth-section .container .content-tittle h1 {
+  padding: 50px;
+  text-align: left;
+  font-size: 64px;
+  font-weight: 400;
+  min-height: 64px;
+  min-width: 601px;
+  letter-spacing: 0;
+  line-height: 77px;
+}
+
+.fourth-section .container .content-tittle p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  min-height: 52px;
+  min-width: 734px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
 .fifth-section {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -345,6 +411,17 @@ img.laptop {
   text-align: center;
 }
 
+.testimonials-section .container .testimonial {
+  text-align: center;
+  padding: 50px;
+  font-size: 64px;
+  font-weight: 400;
+  min-width: 352px;
+  min-height: 64px;
+  letter-spacing: 0;
+  line-height: 77px;
+}
+
 .testimonials-section .container ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,6 +448,18 @@ img.laptop {
 .pricing-plan {
   background: #191e3e;
   color: #fff;
+  text-align: center;
+  min-height: 1319px;
+}
+
+.pricing-plan .pricing {
+  padding: 50px;
+  font-size: 64px;
+  font-weight: 400;
+  min-width: 826px;
+  min-height: 64px;
+  letter-spacing: 0;
+  line-height: 77px;
   text-align: center;
 }
 
@@ -500,6 +589,8 @@ img.laptop {
   min-width: 190px;
   font-style: normal;
   margin: 32px 0 53px 0;
+  background: #fff;
+  color: #000000;
 }
 
 .pricing-plan .pricing-container .pricing1 .second {
@@ -512,6 +603,18 @@ img.laptop {
   font-style: normal;
   padding: 50px;
   margin-top: -50px;
+  margin-bottom: -7px;
+}
+
+.pricing-plan .pricing-container .pricing1 .hex {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0;
+  min-height: 20px;
+  min-width: 190px;
+  font-style: normal;
+  margin: 32px 0 53px 0;
 }
 
 .pricing-plan .pricing-container .pricing1 .second-sec {
@@ -524,6 +627,7 @@ img.laptop {
   font-style: normal;
   padding: 50px;
   margin-top: -50px;
+  margin-bottom: -7px;
 }
 
 .pricing-plan .pricing-container .pricing-level-1 {
@@ -553,7 +657,7 @@ img.laptop {
   font-weight: 300;
   text-align: left;
   letter-spacing: 0;
-  margin-left: 150px;
+  margin-left: 100px;
   margin-top: -15px;
   list-style-type: none;
   padding: 10px;
@@ -581,6 +685,7 @@ img.laptop {
   min-height: 30px;
   margin-left: -170px;
   padding: 0;
+  background: #fff;
 }
 
 .faq p {
@@ -637,6 +742,7 @@ img.laptop {
   min-width: 800px;
   min-height: 64px;
   font-style: normal;
+  padding: 50px;
 }
 
 .faq .container p.faq-desc {
@@ -753,6 +859,14 @@ img.laptop {
   text-align: left;
 }
 
+.ending .container .first-end-container p {
+  color: #7E92AC;
+}
+
+.ending .container .first-end-container .first-end {
+  color: #7E92AC;
+}
+
 .ending .container .second-end {
   margin-left: 190px;
 }
@@ -768,9 +882,108 @@ img.laptop {
   cursor: pointer;
   margin-left: 150px;
   text-align: left;
+  padding: 8px;
 }
 
 .ending .container li a {
   text-decoration: none;
+  color: #7E92AC;
+}
+
+.third-end-container .email-box {
+  background: #fff;
+}
+
+.third-end-container .email-box .email {
+  padding: 10px;
+  min-width: 562px;
+  min-height: 71px;
+  border-style: none;
+  border: 1px solid #7e92AC;
+}
+
+.third-end-container .email-box .subscribe {
+  background: #FEB301;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.social-icons .si-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #5b2aee;
+  color: #fff;
+  border-radius: 50%;
+  min-width: 61px;
+  min-height: 60px;
+  margin: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.social-icons .si-icon .fa {
+  font-size: 16px;
+}
+
+.social-icons a {
+  text-align: center;
+}
+
+.footer-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #5b2aee;
+  color: #fff;
+}
+
+.footer-end .footer {
+  list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.footer-end .footer li {
+  margin: 15px;
+}
+
+.footer-end .footer li a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+
+.mobile-menu {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

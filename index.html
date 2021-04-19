@@ -11,57 +11,61 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="navbar">
-      <div class="container">
-        <a class="s-logo" href="#"
-          ><img src="images/Group 46@2x.png" alt="logo" /><span
-            >Saas Temp</span
-          ></a
-        >
-
-        <nav>
-          <ul class="header">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Why us</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#" class="register">Register</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <section class="first">
         <div class="container">
-          <h1 class="subhead">Discover With New Dashboard</h1>
-          <p>
-            Sed hendrerit metus tortor, quis volutpat en\im gravida imperdiet.
-          </p>
+            <a class="s-logo" href="#"
+            ><img src="images/Group 46@2x.png" alt="logo" /><span
+            >Saas Temp</span></a>
 
-          <div class="button-container">
-            <a class="get-it-now main-button" href="#">GET IT NOW</a>
-            <a href="#" class="play-video main-button">PLAY VIDEO</a>
-          </div>
-          <img src="images/laptop.png" class="laptop" alt="loptop" />
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.png" alt="Open Navigation">
+
+          <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+            <ul class="header">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Why us</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#" class="register">Register</a></li>
+            </ul>
+          </nav>
         </div>
-      </section>
     </div>
+    <section class="first">
+      <div class="container">
+        <div class="sub-head">
+          <h1 class="subhead">Discover With New Dashboard</h1>
+          <p class="subhead-desc">
+          Sed hendrerit metus tortor, quis volutpat en\im gravida imperdiet.
+          </p>
+        </div>
+
+        <div class="button-container">
+          <a class="get-it-now main-button" href="#">GET IT NOW</a>
+          <a href="#" class="play-video main-button">PLAY VIDEO</a>
+        </div>
+      </div>
+    </section>
 
     <section class="second">
-      <div class="container">
+      <div class="laptop">
+        <img src="images/laptop.png" alt="laptop">
+      </div>
+      <div class="inkyy">
         <img src="images/inkyy.png" alt="inkyy" />
       </div>
     </section>
 
     <section class="second-section">
       <div class="container">
-        <h2>Why Choose Us</h2>
-        <p>
-          Proin rhoncus, neque sed congue commodo, orci magna tristique ipsum,
-          vel egestas risus augue quis justo.
+        <h2 class="why-us-subhead">Why Choose Us</h2>
+        <p class="why-us-subhead-desc">
+          Proin rhoncus, neque sed congue commodo, orci magna tristique ipsum,<br>vel egestas risus augue quis justo.
         </p>
 
         <div class="second-section-container">
@@ -191,6 +195,7 @@
 
     <section class="testimonials-section">
       <div class="container">
+        <h2 class="testimonial">Testimonials</h2>
         <ul class="test">
           <li>
             <img src="images/Ellipse5.png" alt="Person" />
@@ -285,7 +290,7 @@
     <section class="pricing-plan">
       <div class="container">
         <h1 class="pricing">We Offer Simple Pricing Plan</h1>
-        <p>Donec augue lorem, mollis quis dui sed, dictum vehicula turpis. Aliquam bibendum vel mi id tempor. Sed efficitur scelerisque mi. Nullam posuere nec ex in malesuada.</p>
+        <p>Donec augue lorem, mollis quis dui sed, dictum vehicula turpis. Aliquam bibendum vel<br>mi id tempor. Sed efficitur scelerisque mi. Nullam posuere nec ex in malesuada.</p>
         
       
 
@@ -295,7 +300,7 @@
           <h5  class="level-1">Level 1</h5>
           <h2 class="first-pricing">$15</h2>
             <h6 class="first">per month / per user</h6>
-            <p class="second">For administrators or others requiring full access to all functionality</p>
+            <p class="second">For administrators or others requiring<br> full access to all functionality</p>
 
           <li class="text">Mollis Ornare Pretium</li>
           <li class="text">Aenean Pretium</li>
@@ -314,8 +319,8 @@
           <ul class="pricing1 pricing-level-2">
           <h5  class="level-2">Level 2</h5>
           <h2 class="second-pricing">$25</h2>
-            <h6 class="first">per month / per user</h6>
-            <p class="second-sec">For project managers, resource managers, admin staff etc</p>
+            <h6 class="pricing-level-2 hex">per month / per user</h6>
+            <p class="second-sec">For project managers, resource<br>managers, admin staff etc</p>
 
           <li>Aliquam Lacinia</li>
           <li>Mollis Ornare Pretium</li>
@@ -335,7 +340,7 @@
           <h5  class="level-3">Level 3</h5>
           <h2 class="third-pricing">$40</h2>
             <h6 class="first">per month / per user</h6>
-            <p class="second">For administrators or others requiring full access to all functionality</p>
+            <p class="second">For administrators or others requiring<br>full access to all functionality</p>
 
           <li class="text">Mollis Ornare Pretium</li>
           <li class="text">Aenean Pretium</li>
@@ -356,7 +361,7 @@
     <section class="faq">
       <div class="container">
         <h1 class="faq-header">Frequently Asked Questions</h1>
-        <p class="faq-desc">Donec augue lorem, mollis quis dui sed, dictum vehicula turpis. Aliquam bibendum vel mi id tempor. Sed efficitur scelerisque mi. Nullam posuere nec ex in malesuada.</p>
+        <p class="faq-desc">Donec augue lorem, mollis quis dui sed, dictum vehicula turpis. Aliquam bibendum vel<br> mi id tempor. Sed efficitur scelerisque mi. Nullam posuere nec ex in malesuada.</p>
 
         <div class="faq-container">
           <div class="faq-first-list">
@@ -366,7 +371,7 @@
             <p>Duis sagittis orci non risus semper feugiat. Fusce ullamcorper sollicitudin velit et pretium. Ut quis orci sed dolor accumsan ultrices. Nunc ut ornare tellus. Nulla ut eros non lorem rhoncus blandit.</p>
           </li>
           <li>
-            <h6>Fusce Sodales Placerat Nibh Eget ?</h6>
+            <h6>Vestibulum Porttitor Convallis Lectus ?</h6>
             <p>Duis sagittis orci non risus semper feugiat. Fusce ullamcorper sollicitudin velit et pretium. Ut quis orci sed dolor accumsan ultrices. Nunc ut ornare tellus. Nulla ut eros non lorem rhoncus blandit.</p>
           </li>
           <li>
@@ -383,7 +388,7 @@
             <p>Duis sagittis orci non risus semper feugiat. Fusce ullamcorper sollicitudin velit et pretium. Ut quis orci sed dolor accumsan ultrices. Nunc ut ornare tellus. Nulla ut eros non lorem rhoncus blandit.</p>
           </li>
           <li>
-            <h6>Fusce Sodales Placerat Nibh Eget ?</h6>
+            <h6>Vestibulum Porttitor Convallis Lectus ?</h6>
             <p>Duis sagittis orci non risus semper feugiat. Fusce ullamcorper sollicitudin velit et pretium. Ut quis orci sed dolor accumsan ultrices. Nunc ut ornare tellus. Nulla ut eros non lorem rhoncus blandit.</p>
           </li>
           <li>
@@ -400,7 +405,7 @@
       <div class="container">
             <div class="contact-left">
                 <h2>Drop A Message</h2>
-                <p>Donec tempor finibus ante ac luctus. Fusce facilisis nisi vel odio tincidunt maximus. Pellentesque tempus gravida viverra.</p>
+                <p>Donec tempor finibus ante ac luctus. Fusce facilisis nisi vel odio tincidunt<br>maximus. Pellentesque tempus gravida viverra.</p>
 
                 <form action="" class="contact-form">
                   <label for="name"></label>
@@ -426,7 +431,7 @@
         <div class="content-desc">
           <p>
             Donec tempor finibus ante ac luctus. Fusce facilisis nisi vel odio
-            tincidunt maximus. Pellentesque tempus gravida viverra.
+            tincidunt maximus.<br>Pellentesque tempus gravida viverra.
           </p>
         </div>
 
@@ -439,7 +444,7 @@
     <section class="ending">
       <div class="container">
         <div class="first-end-container">
-          <h6 class="first-end">About Saas Temp</h6>
+          <h6 class="first-end-title">About Saas Temp</h6>
           <p class="first-end">Aliquam fermentum tellus vitae nisl<br>dictum vel sodales diam molestie.<br>Pellentesque nec orci posuere,<br>feugiat quam sed.</p>
           <p>Nam tincidunt lectus quis nibh<br>ultrices, vitae congue risus porta<br>mauris eros.</p>
         </div>
@@ -455,10 +460,54 @@
         </div>
         <div class="third-end-container">
           <h6>Subscribe Our Newsletter</h6>
-          <input type="email" id="email" name="email" placeholder="Enter Email Address">
-          <button class="main-button get-it-now">SUBSCRIBE</button>
+          <div class="email-box">
+            <input type="email" id="email" class="email" name="email" placeholder="Enter Email Address">
+            <a href="#" class="subscribe">
+              <i class="fa fa-paper-plane">SUBSCRIBE</i>
+            </a>
+          </div>
+
+          <div class="social-icons">
+            <a href="#" class="si-icon">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" class="si-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" class="si-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </div>
         </div>
       </div>
+
+      <footer class="footer-end">
+        <p>Designed by Inkyy.com</p>
+        <div class="menu">
+          <ul class="footer">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Why us</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </footer>
     </section>
+
+    <script>
+      const mobileBtn = document.getElementById('mobile-cta')
+          nav = document.querySelector('nav')
+          mobileBtnExit = document.getElementById('mobile-exit');
+
+      mobileBtn.addEventListener('click', () => {
+          nav.classlist.add(',menu-btn');
+      })
+
+      mobileBtnExit.addEventListener('click', () => {
+        nav.classlist.remove('menu-exit');
+      })
+    </script>
   </body>
 </html>

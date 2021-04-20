@@ -2,7 +2,14 @@ html,
 body {
   height: 100%;
   width: 100%;
-  min-width: 1920px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 body {
@@ -14,15 +21,37 @@ body {
   padding: 1em;
   color: #ffff;
   background: #6837fa;
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar {
+    width: auto;
+  }
 }
 
 .navbar a {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar nav {
+    display: none;
+  }
+}
+
 .navbar .s-logo img {
   width: 66.38px;
   height: 79.26px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar .s-logo img {
+    width: 39px;
+    height: 46.57px;
+  }
 }
 
 .navbar .s-logo span {
@@ -31,6 +60,12 @@ body {
   min-height: 46px;
   min-width: 199px;
   color: #ffff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar .s-logo span {
+    display: none;
+  }
 }
 
 .navbar ul.header {
@@ -61,9 +96,20 @@ body {
 }
 
 .container {
-  max-width: 1140px;
   margin: 0 auto;
   display: block;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
 }
 
 .first {
@@ -76,9 +122,25 @@ body {
   min-height: 854px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .first {
+    min-width: 376px;
+    min-height: 478px;
+    border-bottom-left-radius: 53% 10%;
+    border-bottom-right-radius: 53% 10%;
+  }
+}
+
 .first .subhead-desc {
   padding: 5px;
   margin-top: -80px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .first .subhead-desc {
+    margin-top: -100px;
+    padding: 43px;
+  }
 }
 
 .subhead {
@@ -91,9 +153,31 @@ body {
   padding: 100px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .subhead {
+    text-align: center;
+    min-width: 226px;
+    min-height: 57px;
+    padding: 80px;
+    font-size: 26px;
+  }
+}
+
 p {
   text-align: center;
   margin-bottom: 51px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  p {
+    text-align: center;
+    min-width: 263px;
+    min-height: 26px;
+    font-size: 12px;
+    letter-spacing: 0;
+    font-weight: 300;
+    margin-bottom: -8px;
+  }
 }
 
 .laptop {
@@ -102,10 +186,52 @@ p {
   margin-top: -500px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .laptop {
+    padding: 0;
+    text-align: center;
+    margin-top: -78px;
+    margin-left: -12px;
+    width: 424.84px;
+    height: 300.23px;
+  }
+}
+
 .inkyy {
   text-align: center;
   margin-top: -205px;
   padding: 50px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .inkyy {
+    display: none;
+  }
+}
+
+.inkyy-group {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .inkyy-group {
+    display: block;
+    text-align: center;
+    padding: 36px;
+    margin-top: -136px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .inkyy-group .inkyy-group1 {
+    margin: 0 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .inkyy-group .inkyy-group2 {
+    margin-top: 30px;
+  }
 }
 
 .button-container {
@@ -118,8 +244,20 @@ p {
   margin-right: 22px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .button-container .get-it-now {
+    margin-right: -9px;
+  }
+}
+
 .button-container .play-video {
   margin-left: 22px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .button-container .play-video {
+    margin-right: -9px;
+  }
 }
 
 .play-video {
@@ -127,9 +265,21 @@ p {
   margin-left: 22px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .play-video {
+    margin: 0;
+  }
+}
+
 .get-it-now {
   background: #ffdd33;
   margin-right: 22px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .get-it-now {
+    margin: auto;
+  }
 }
 
 .free-trial {
@@ -139,7 +289,7 @@ p {
 .main-button {
   min-height: 68px;
   min-width: 222px;
-  letter-spacing: 0.94px;
+  letter-spacing: 1px;
   line-height: 24px;
   text-align: left;
   font-size: 20px;
@@ -150,9 +300,26 @@ p {
   padding: 16px 36px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .main-button {
+    min-width: 106px;
+    min-height: 33px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+}
+
 .second-section {
   background: #fbfcfe;
   text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-section {
+    min-height: 457px;
+  }
 }
 
 .second-section .why-us-subhead {
@@ -165,6 +332,32 @@ p {
   line-height: 77px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-section .why-us-subhead {
+    padding: 30px;
+    font-size: 26px;
+    font-weight: 400;
+    min-width: 188px;
+    min-height: 26px;
+    letter-spacing: 0;
+    line-height: 31px;
+  }
+}
+
+.second-section .second-section-dot {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-section .second-section-dot {
+    display: block;
+    margin-left: 88px;
+    margin-top: 23px;
+    width: 28px;
+    height: 6px;
+  }
+}
+
 .second-section .why-us-subhead-desc {
   font-size: 20px;
   font-weight: 300;
@@ -173,6 +366,19 @@ p {
   letter-spacing: 0;
   line-height: 32px;
   color: #7e92ac;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-section .why-us-subhead-desc {
+    font-size: 12px;
+    font-weight: 300;
+    min-width: 302px;
+    min-height: 26px;
+    letter-spacing: 0;
+    line-height: 14px;
+    padding: 33px;
+    margin-top: -56px;
+  }
 }
 
 .second-section .second-section-container {
@@ -187,11 +393,28 @@ p {
   min-width: 1920px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-section .second-section-container {
+    min-width: 221px;
+    min-height: 236px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .second-section .why-us {
   margin: 16px;
   height: 431px;
   width: 414px;
   background: #fbfcfe;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-section .why-us {
+    height: 236px;
+    width: 221px;
+  }
 }
 
 .second-section .why-us.active {
@@ -214,6 +437,14 @@ p {
   margin-top: 25px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-section .why-us .why-us-content .why-us-img {
+    width: 19.18px;
+    height: 15.37px;
+    margin: 0;
+  }
+}
+
 .second-section .why-us .why-us-content .why-us-desc {
   text-align: left;
 }
@@ -227,6 +458,17 @@ p {
   min-height: 30;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-section .why-us .why-us-content .why-us-desc h6 {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0;
+    font-weight: initial;
+    min-width: 99px;
+    min-height: 15;
+  }
+}
+
 .second-section .why-us .why-us-content .why-us-desc p {
   text-align: left;
   font-size: 16px;
@@ -234,6 +476,17 @@ p {
   letter-spacing: 0;
   min-width: 229px;
   min-height: 94px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-section .why-us .why-us-content .why-us-desc p {
+    text-align: left;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0;
+    min-width: 156px;
+    min-height: 92px;
+  }
 }
 
 .third-section .img-box {
@@ -246,8 +499,30 @@ p {
   display: flex;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .third-section .img-box {
+    display: -ms-grid;
+    display: grid;
+    margin-left: 39px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .third-section .img-box .img-box1 {
+    width: 303px;
+    height: 217px;
+    margin-top: 46px;
+  }
+}
+
 .third-section .structure {
   display: block;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .third-section .structure {
+    width: 375px;
+  }
 }
 
 .third-section .structure h6 {
@@ -257,6 +532,20 @@ p {
   min-height: 64px;
   font-size: 36px;
   font-weight: 600;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .third-section .structure h6 {
+    line-height: 31px;
+    letter-spacing: 0;
+    min-width: 238px;
+    min-height: 26px;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: -61px;
+  }
 }
 
 .third-section .structure p {
@@ -269,10 +558,32 @@ p {
   text-align: left;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .third-section .structure p {
+    line-height: 16px;
+    letter-spacing: 0;
+    min-width: 302px;
+    min-height: 60px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: -52px;
+    margin-left: -73px;
+    padding: 70px;
+  }
+}
+
 .fourth-section {
   background: #6837fa;
   position: relative;
   height: 629px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fourth-section {
+    height: 256px;
+    width: 376px;
+  }
 }
 
 .fourth-section .top-purple-curve {
@@ -286,8 +597,23 @@ p {
   border-bottom-right-radius: 50%;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fourth-section .top-purple-curve {
+    height: 227px;
+    background-blend-mode: screen;
+    background-size: 849.71px;
+    background-color: #5b2aee;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 80% 20%;
+    border-bottom-right-radius: 80% 20%;
+  }
+}
+
 .fourth-section .bottom-white-curve {
-  height: 100px;
+  height: 221px;
   background-color: #fff;
   position: absolute;
   bottom: 0;
@@ -297,12 +623,55 @@ p {
   border-top-left-radius: 50%;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fourth-section .bottom-white-curve {
+    background-color: #fff;
+    bottom: -197px;
+    border-top-right-radius: 70% 10%;
+    border-top-left-radius: 70% 10%;
+  }
+}
+
 .fourth-section .container {
   position: relative;
   color: #fff;
   text-align: center;
   width: 734px;
   height: 312px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fourth-section .container {
+    text-align: center;
+    width: 376px;
+    height: 256px;
+  }
+}
+
+.fourth-section .container p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  min-height: 52px;
+  min-width: 734px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fourth-section .container p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    min-height: 44px;
+    min-width: 272px;
+    letter-spacing: 0;
+    line-height: 16px;
+    padding: 52px;
+    margin-top: -76px;
+    margin-left: 10px;
+    margin-bottom: -15px;
+  }
 }
 
 .fourth-section .container .content-tittle {
@@ -323,14 +692,18 @@ p {
   line-height: 77px;
 }
 
-.fourth-section .container .content-tittle p {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 300;
-  min-height: 52px;
-  min-width: 734px;
-  letter-spacing: 0;
-  line-height: 32px;
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fourth-section .container .content-tittle h1 {
+    padding: 20px;
+    text-align: left;
+    font-size: 26px;
+    font-weight: 400;
+    min-height: 26px;
+    min-width: 244px;
+    letter-spacing: 0;
+    line-height: 31px;
+    margin-left: 50px;
+  }
 }
 
 .fifth-section {
@@ -339,8 +712,46 @@ p {
   display: inline-flex;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fifth-section {
+    width: 375px;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fifth-section .rectangular {
+    display: none;
+  }
+}
+
+.fifth-section .just-box {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fifth-section .just-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 303px;
+    height: 217px;
+    border-radius: 10%;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+}
+
 .fifth-section .container .first-content {
   margin-left: 100px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fifth-section .container .first-content {
+    margin-left: -110px;
+  }
 }
 
 .fifth-section .container .first-content h6 {
@@ -354,6 +765,20 @@ p {
   margin-left: 145px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fifth-section .container .first-content h6 {
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    min-width: 229px;
+    min-height: 26px;
+    text-align: left;
+    margin-left: 135px;
+    margin-top: 260px;
+  }
+}
+
 .fifth-section .container .first-content .task-list li {
   font-size: 16px;
   font-weight: 300;
@@ -363,6 +788,18 @@ p {
   list-style-type: none;
   padding: 30px;
   position: relative;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fifth-section .container .first-content .task-list li {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0;
+    margin-left: 112px;
+    list-style-type: none;
+    padding: 20px;
+  }
 }
 
 .fifth-section .container .first-content .task-list li::before {
@@ -380,6 +817,13 @@ p {
 .fifth-section .container .first-content .button-a {
   margin-top: 113px;
   margin-left: 126px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fifth-section .container .first-content .button-a {
+    margin-top: 30px;
+    margin-left: 135px;
+  }
 }
 
 .fifth-section .container .first-content .rectangular-box {
@@ -407,8 +851,25 @@ p {
   margin: 6px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .testimonials-section .star-container .star {
+    width: 11px;
+    height: 10px;
+    margin: 1px;
+  }
+}
+
 .testimonials-section .third-container {
   text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .testimonials-section .third-container {
+    width: 28px;
+    height: 6px;
+    text-align: center;
+    margin: -61px 0 10px 85px;
+  }
 }
 
 .testimonials-section .container .testimonial {
@@ -422,10 +883,35 @@ p {
   line-height: 77px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .testimonials-section .container .testimonial {
+    text-align: center;
+    padding: 50px;
+    font-size: 26px;
+    font-weight: 400;
+    min-width: 143px;
+    min-height: 26px;
+    letter-spacing: 0;
+    line-height: 31px;
+  }
+}
+
 .testimonials-section .container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .testimonials-section .container ul {
+    margin: 0 0 0 -50px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .testimonials-section .container ul .picture {
+    display: none;
+  }
 }
 
 .testimonials-section .container ul li {
@@ -437,6 +923,61 @@ p {
   list-style-type: none;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .testimonials-section .container ul li h6 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    min-width: 183px;
+    min-height: 15px;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+}
+
+.testimonials-section .container ul li .cite {
+  color: #7e92ac;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .testimonials-section .container ul li .cite {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    min-width: 183px;
+    min-height: 12px;
+    letter-spacing: 0;
+    line-height: 14px;
+  }
+}
+
+.testimonials-section .container ul li blockquote {
+  color: #7e92ac;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .testimonials-section .container ul li blockquote {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    min-width: 184px;
+    min-height: 108px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .testimonials-section .container ul li {
+    text-align: center;
+    padding: 2em 1em;
+    width: 80%;
+    margin: 0 auto 5em auto;
+    border-radius: 1em;
+    list-style-type: none;
+  }
+}
+
 .testimonials-section .container ul li img {
   width: 5em;
   height: 5em;
@@ -445,11 +986,26 @@ p {
   margin-top: -4.5em;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .testimonials-section .container ul li img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+  }
+}
+
 .pricing-plan {
   background: #191e3e;
   color: #fff;
   text-align: center;
   min-height: 1319px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan {
+    min-width: 376px;
+    min-height: 780px;
+  }
 }
 
 .pricing-plan .pricing {
@@ -461,6 +1017,19 @@ p {
   letter-spacing: 0;
   line-height: 77px;
   text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing {
+    padding: 50px;
+    font-size: 26px;
+    font-weight: 400;
+    min-width: 198px;
+    min-height: 57px;
+    letter-spacing: 0;
+    line-height: 31px;
+    text-align: center;
+  }
 }
 
 .pricing-plan h1 {
@@ -485,6 +1054,21 @@ p {
   font-style: normal;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    min-width: 302px;
+    min-height: 44px;
+    letter-spacing: 0;
+    text-align: center;
+    font-style: normal;
+    padding: 28px;
+    margin-top: -50px;
+  }
+}
+
 .pricing-plan .pricing-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,6 +1078,14 @@ p {
           justify-content: center;
   position: relative;
   margin: 0 120px 0 120px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container {
+    width: 242px;
+    height: 423px;
+    margin-left: 72px;
+  }
 }
 
 .pricing-plan .pricing-container .second-pricing-container {
@@ -517,6 +1109,13 @@ p {
   min-height: 731px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 {
+    min-width: 242px;
+    min-height: 474px;
+  }
+}
+
 .pricing-plan .pricing-container .pricing1 .level-1 {
   font-size: 30px;
   letter-spacing: 0;
@@ -535,6 +1134,20 @@ p {
   min-height: 30px;
   min-width: 97px;
   font-weight: 300;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 .level-2 {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-style: normal;
+    min-height: 18px;
+    min-width: 58px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    margin-left: -40px;
+  }
 }
 
 .pricing-plan .pricing-container .pricing1 .level-3 {
@@ -567,6 +1180,20 @@ p {
   min-width: 140px;
   font-style: normal;
   margin: -30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 .second-pricing {
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 31px;
+    letter-spacing: 0;
+    min-height: 26px;
+    min-width: 43px;
+    font-style: normal;
+    margin-left: -67px;
+    margin-bottom: -26px;
+  }
 }
 
 .pricing-plan .pricing-container .pricing1 .third-pricing {
@@ -617,6 +1244,19 @@ p {
   margin: 32px 0 53px 0;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 .hex {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0;
+    min-height: 12px;
+    min-width: 116px;
+    font-style: normal;
+    margin-right: 35px;
+  }
+}
+
 .pricing-plan .pricing-container .pricing1 .second-sec {
   font-size: 20px;
   font-weight: 300;
@@ -628,6 +1268,20 @@ p {
   padding: 50px;
   margin-top: -50px;
   margin-bottom: -7px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 .second-sec {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0;
+    min-height: 28px;
+    min-width: 184px;
+    font-style: normal;
+    padding: 20px;
+    margin-left: -35px;
+  }
 }
 
 .pricing-plan .pricing-container .pricing-level-1 {
@@ -662,6 +1316,21 @@ p {
   list-style-type: none;
   padding: 10px;
   position: relative;
+  color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 li {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0;
+    min-width: 127px;
+    font-style: normal;
+    text-align: left;
+    padding: 10px;
+    margin-left: 50px;
+  }
 }
 
 .pricing-plan .pricing-container .pricing1 li::before {
@@ -674,6 +1343,22 @@ p {
   background-size: contain;
   margin-left: 50px;
   margin-top: 5px;
+  color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 li::before {
+    ontent: "";
+    left: -3em;
+    position: absolute;
+    width: 14px;
+    height: 11px;
+    background-image: url("../images/check-list.png");
+    background-size: contain;
+    margin-left: 20px;
+    margin-top: 6px;
+    color: #fff;
+  }
 }
 
 .faq h6 {
@@ -860,11 +1545,11 @@ p {
 }
 
 .ending .container .first-end-container p {
-  color: #7E92AC;
+  color: #7e92ac;
 }
 
 .ending .container .first-end-container .first-end {
-  color: #7E92AC;
+  color: #7e92ac;
 }
 
 .ending .container .second-end {
@@ -887,7 +1572,7 @@ p {
 
 .ending .container li a {
   text-decoration: none;
-  color: #7E92AC;
+  color: #7e92ac;
 }
 
 .third-end-container .email-box {
@@ -899,11 +1584,14 @@ p {
   min-width: 562px;
   min-height: 71px;
   border-style: none;
-  border: 1px solid #7e92AC;
+  border: 1px solid #7e92ac;
 }
 
 .third-end-container .email-box .subscribe {
-  background: #FEB301;
+  background: #feb301;
+  min-height: 72px;
+  min-width: 219px;
+  border-radius: 10%;
 }
 
 .social-icons {
@@ -977,13 +1665,7 @@ p {
 
 .mobile-menu {
   float: right;
-  margin: .5em;
+  margin: 0.5em;
   cursor: pointer;
-}
-
-@media only screen and (min-width: 768px) {
-  .mobile-menu, .mobile-menu-exit {
-    display: none;
-  }
 }
 /*# sourceMappingURL=main.css.map */

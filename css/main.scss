@@ -2,7 +2,11 @@ html,
 body {
   height: 100%;
   width: 100%;
-  min-width: 1920px;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 body {
@@ -13,16 +17,32 @@ body {
   padding: 1em;
   color: #ffff;
   background: #6837fa;
+  width: auto;
+  max-width: 100%;
+  display: block;
 
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    width: auto;
+  }
 
   a {
     text-decoration: none;
+  }
+
+  nav {
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      display: none;
+    }
   }
 
   .s-logo {
     img {
       width: 66.38px;
       height: 79.26px;
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        width: 39px;
+        height: 46.57px;
+      }
     }
 
     span {
@@ -31,6 +51,10 @@ body {
       min-height: 46px;
       min-width: 199px;
       color: #ffff;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        display: none;
+      }
     }
   }
 
@@ -60,9 +84,16 @@ body {
 }
 
 .container {
-  max-width: 1140px;
   margin: 0 auto;
   display: block;
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: 576px) {
+    max-width: 100%;
+  }
 }
 
 .first {
@@ -73,10 +104,21 @@ body {
   border-bottom-right-radius: 100%;
   min-width: 1900px;
   min-height: 854px;
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    min-width: 376px;
+    min-height: 478px;
+    border-bottom-left-radius: 53% 10%;
+    border-bottom-right-radius: 53% 10%;
+  }
 
   .subhead-desc {
     padding: 5px;
     margin-top: -80px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      margin-top: -100px;
+      padding: 43px;
+    }
   }
 }
 
@@ -88,20 +130,74 @@ body {
   min-width: 871px;
   min-height: 64px;
   padding: 100px;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    text-align: center;
+    min-width: 226px;
+    min-height: 57px;
+    padding: 80px;
+    font-size: 26px;
+  }
 }
 p {
   text-align: center;
   margin-bottom: 51px;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    text-align: center;
+    min-width: 263px;
+    min-height: 26px;
+    font-size: 12px;
+    letter-spacing: 0;
+    font-weight: 300;
+    margin-bottom: -8px;
+  }
 }
 .laptop {
   padding: 50px;
   text-align: center;
   margin-top: -500px;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    padding: 0;
+    text-align: center;
+    margin-top: -78px;
+    margin-left: -12px;
+    width: 424.84px;
+    height: 300.23px;
+  }
 }
 .inkyy {
   text-align: center;
   margin-top: -205px;
   padding: 50px;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.inkyy-group {
+  display: none;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    display: block;
+    text-align: center;
+    padding: 36px;
+    margin-top: -136px;
+  }
+
+  .inkyy-group1 {
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      margin: 0 0 0 0;
+    }
+  }
+
+  .inkyy-group2 {
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      margin-top: 30px;
+    }
+  }
 }
 
 .button-container {
@@ -111,20 +207,36 @@ p {
 
   .get-it-now {
     margin-right: 22px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      margin-right: -9px;
+    }
   }
 
   .play-video {
     margin-left: 22px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      margin-right: -9px;
+    }
   }
 }
 .play-video {
   background: #572bd9;
   margin-left: 22px;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    margin: 0;
+  }
 }
 
 .get-it-now {
   background: #ffdd33;
   margin-right: 22px;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    margin: auto;
+  }
 }
 
 .free-trial {
@@ -134,7 +246,7 @@ p {
 .main-button {
   min-height: 68px;
   min-width: 222px;
-  letter-spacing: 0.94px;
+  letter-spacing: 1px;
   line-height: 24px;
   text-align: left;
   font-size: 20px;
@@ -143,11 +255,24 @@ p {
   text-decoration: none;
   color: #fff;
   padding: 16px 36px;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    min-width: 106px;
+    min-height: 33px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
 }
 
 .second-section {
   background: #fbfcfe;
   text-align: center;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    min-height: 457px;
+  }
 
   .why-us-subhead {
     padding: 50px;
@@ -157,8 +282,28 @@ p {
     min-height: 64px;
     letter-spacing: 0;
     line-height: 77px;
-  }
 
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      padding: 30px;
+      font-size: 26px;
+      font-weight: 400;
+      min-width: 188px;
+      min-height: 26px;
+      letter-spacing: 0;
+      line-height: 31px;
+    }
+  }
+  .second-section-dot {
+    display: none;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      display: block;
+      margin-left: 88px;
+      margin-top: 23px;
+      width: 28px;
+      height: 6px;
+    }
+  }
   .why-us-subhead-desc {
     font-size: 20px;
     font-weight: 300;
@@ -167,6 +312,17 @@ p {
     letter-spacing: 0;
     line-height: 32px;
     color: #7e92ac;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      font-size: 12px;
+      font-weight: 300;
+      min-width: 302px;
+      min-height: 26px;
+      letter-spacing: 0;
+      line-height: 14px;
+      padding: 33px;
+      margin-top: -56px;
+    }
   }
 
   .second-section-container {
@@ -174,6 +330,12 @@ p {
     flex-direction: row;
     min-height: 1000px;
     min-width: 1920px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      min-width: 221px;
+      min-height: 236px;
+      justify-content: center;
+    }
   }
 
   .why-us {
@@ -181,6 +343,11 @@ p {
     height: 431px;
     width: 414px;
     background: #fbfcfe;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      height: 236px;
+      width: 221px;
+    }
 
     &.active {
       box-shadow: 0px 20px 40px 0px rgba(36, 38, 114, 0.89);
@@ -198,6 +365,12 @@ p {
         height: 38.86px;
         margin-bottom: -49px;
         margin-top: 25px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          width: 19.18px;
+          height: 15.37px;
+          margin: 0;
+        }
       }
 
       .why-us-desc {
@@ -209,6 +382,15 @@ p {
           font-weight: initial;
           min-width: 198px;
           min-height: 30;
+
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0;
+            font-weight: initial;
+            min-width: 99px;
+            min-height: 15;
+          }
         }
 
         p {
@@ -218,6 +400,15 @@ p {
           letter-spacing: 0;
           min-width: 229px;
           min-height: 94px;
+
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            text-align: left;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0;
+            min-width: 156px;
+            min-height: 92px;
+          }
         }
       }
     }
@@ -225,16 +416,35 @@ p {
 }
 
 .third-section {
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+  }
   .img-box {
     width: 812px;
     height: 583px;
     border-radius: 20px;
     margin-left: -248px;
     display: flex;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      display: grid;
+      margin-left: 39px;
+    }
+
+    .img-box1 {
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        width: 303px;
+        height: 217px;
+        margin-top: 46px;
+      }
+    }
   }
 
   .structure {
     display: block;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      width: 375px;
+    }
     h6 {
       line-height: 77px;
       letter-spacing: 0;
@@ -242,6 +452,18 @@ p {
       min-height: 64px;
       font-size: 36px;
       font-weight: 600;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        line-height: 31px;
+        letter-spacing: 0;
+        min-width: 238px;
+        min-height: 26px;
+        font-size: 26px;
+        font-weight: 600;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: -61px;
+      }
     }
 
     p {
@@ -252,6 +474,19 @@ p {
       font-size: 20px;
       font-weight: 300;
       text-align: left;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        line-height: 16px;
+        letter-spacing: 0;
+        min-width: 302px;
+        min-height: 60px;
+        font-size: 12px;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: -52px;
+        margin-left: -73px;
+        padding: 70px;
+      }
     }
   }
 }
@@ -260,6 +495,11 @@ p {
   background: #6837fa;
   position: relative;
   height: 629px;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    height: 256px;
+    width: 376px;
+  }
 
   .top-purple-curve {
     height: 400px;
@@ -270,10 +510,23 @@ p {
     right: 0;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      height: 227px;
+      background-blend-mode: screen;
+      background-size: 849.71px;
+      background-color: #5b2aee;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      right: 0;
+      border-bottom-left-radius: 80% 20%;
+      border-bottom-right-radius: 80% 20%;
+    }
   }
 
   .bottom-white-curve {
-    height: 100px;
+    height: 221px;
     background-color: #fff;
     position: absolute;
     bottom: 0;
@@ -281,6 +534,13 @@ p {
     right: 0;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      background-color: #fff;
+      bottom: -197px;
+      border-top-right-radius: 70% 10%;
+      border-top-left-radius: 70% 10%;
+    }
   }
 
   .container {
@@ -289,6 +549,36 @@ p {
     text-align: center;
     width: 734px;
     height: 312px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      text-align: center;
+      width: 376px;
+      height: 256px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 300;
+      min-height: 52px;
+      min-width: 734px;
+      letter-spacing: 0;
+      line-height: 32px;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 300;
+        min-height: 44px;
+        min-width: 272px;
+        letter-spacing: 0;
+        line-height: 16px;
+        padding: 52px;
+        margin-top: -76px;
+        margin-left: 10px;
+        margin-bottom: -15px;
+      }
+    }
 
     .content-tittle {
       text-align: center;
@@ -305,16 +595,18 @@ p {
         min-width: 601px;
         letter-spacing: 0;
         line-height: 77px;
-      }
 
-      p {
-        text-align: center;
-        font-size: 20px;
-        font-weight: 300;
-        min-height: 52px;
-        min-width: 734px;
-        letter-spacing: 0;
-        line-height: 32px;
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          padding: 20px;
+          text-align: left;
+          font-size: 26px;
+          font-weight: 400;
+          min-height: 26px;
+          min-width: 244px;
+          letter-spacing: 0;
+          line-height: 31px;
+          margin-left: 50px;
+        }
       }
     }
   }
@@ -323,9 +615,37 @@ p {
 .fifth-section {
   display: inline-flex;
 
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    width: 375px;
+    display: grid;
+  }
+
+  .rectangular {
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  .just-box {
+    display: none;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      display: flex;
+      width: 303px;
+      height: 217px;
+      border-radius: 10%;
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+  }
   .container {
     .first-content {
       margin-left: 100px;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        margin-left: -110px;
+      }
 
       h6 {
         font-size: 36px;
@@ -336,6 +656,18 @@ p {
         min-height: 64px;
         text-align: left;
         margin-left: 145px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-size: 26px;
+          font-weight: 400;
+          letter-spacing: 0;
+          margin-bottom: 0;
+          min-width: 229px;
+          min-height: 26px;
+          text-align: left;
+          margin-left: 135px;
+          margin-top: 260px;
+        }
       }
 
       .task-list {
@@ -348,6 +680,16 @@ p {
           list-style-type: none;
           padding: 30px;
           position: relative;
+
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            font-size: 12px;
+            font-weight: 300;
+            text-align: left;
+            letter-spacing: 0;
+            margin-left: 112px;
+            list-style-type: none;
+            padding: 20px;
+          }
 
           &::before {
             content: "";
@@ -366,6 +708,11 @@ p {
       .button-a {
         margin-top: 113px;
         margin-left: 126px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          margin-top: 30px;
+          margin-left: 135px;
+        }
       }
 
       .rectangular-box {
@@ -386,11 +733,24 @@ p {
       width: 19px;
       height: 19px;
       margin: 6px;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        width: 11px;
+        height: 10px;
+        margin: 1px;
+      }
     }
   }
 
   .third-container {
     text-align: center;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      width: 28px;
+      height: 6px;
+      text-align: center;
+      margin: -61px 0 10px 85px;
+    }
   }
 
   .container {
@@ -403,9 +763,30 @@ p {
       min-height: 64px;
       letter-spacing: 0;
       line-height: 77px;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        text-align: center;
+        padding: 50px;
+        font-size: 26px;
+        font-weight: 400;
+        min-width: 143px;
+        min-height: 26px;
+        letter-spacing: 0;
+        line-height: 31px;
+      }
     }
     ul {
       display: flex;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        margin: 0 0 0 -50px;
+      }
+
+      .picture {
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          display: none;
+        }
+      }
 
       li {
         text-align: center;
@@ -415,12 +796,67 @@ p {
         border-radius: 1em;
         list-style-type: none;
 
+        h6 {
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            min-width: 183px;
+            min-height: 15px;
+            letter-spacing: 0;
+            line-height: 18px;
+          }
+        }
+
+        .cite {
+          color: #7e92ac;
+
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 300;
+            min-width: 183px;
+            min-height: 12px;
+            letter-spacing: 0;
+            line-height: 14px;
+          }
+        }
+
+        blockquote {
+          color: #7e92ac;
+
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 300;
+            min-width: 184px;
+            min-height: 108px;
+            letter-spacing: 0;
+            line-height: 16px;
+          }
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          text-align: center;
+          padding: 2em 1em;
+          width: 80%;
+          margin: 0 auto 5em auto;
+          border-radius: 1em;
+          list-style-type: none;
+        }
+
         img {
           width: 5em;
           height: 5em;
           border: 5px;
           border-radius: 50%;
           margin-top: -4.5em;
+
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+          }
         }
       }
     }
@@ -433,6 +869,10 @@ p {
   text-align: center;
   min-height: 1319px;
 
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    min-width: 376px;
+    min-height: 780px;
+  }
   .pricing {
     padding: 50px;
     font-size: 64px;
@@ -442,6 +882,17 @@ p {
     letter-spacing: 0;
     line-height: 77px;
     text-align: center;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      padding: 50px;
+      font-size: 26px;
+      font-weight: 400;
+      min-width: 198px;
+      min-height: 57px;
+      letter-spacing: 0;
+      line-height: 31px;
+      text-align: center;
+    }
   }
 
   h1 {
@@ -463,6 +914,19 @@ p {
     letter-spacing: 0;
     text-align: center;
     font-style: normal;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 16px;
+      min-width: 302px;
+      min-height: 44px;
+      letter-spacing: 0;
+      text-align: center;
+      font-style: normal;
+      padding: 28px;
+      margin-top: -50px;
+    }
   }
 
   .pricing-container {
@@ -470,6 +934,12 @@ p {
     justify-content: center;
     position: relative;
     margin: 0 120px 0 120px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      width: 242px;
+      height: 423px;
+      margin-left: 72px;
+    }
 
     .second-pricing-container {
       position: relative;
@@ -485,6 +955,11 @@ p {
       margin: 0 15px 0 15px;
       min-width: 440px;
       min-height: 731px;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        min-width: 242px;
+        min-height: 474px;
+      }
 
       .level-1 {
         font-size: 30px;
@@ -504,6 +979,18 @@ p {
         min-height: 30px;
         min-width: 97px;
         font-weight: 300;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-size: 18px;
+          letter-spacing: 0;
+          line-height: 22px;
+          font-style: normal;
+          min-height: 18px;
+          min-width: 58px;
+          font-weight: 300;
+          margin-bottom: 50px;
+          margin-left: -40px;
+        }
       }
 
       .level-3 {
@@ -536,6 +1023,18 @@ p {
         min-width: 140px;
         font-style: normal;
         margin: -30px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-weight: 300;
+          font-size: 23px;
+          line-height: 31px;
+          letter-spacing: 0;
+          min-height: 26px;
+          min-width: 43px;
+          font-style: normal;
+          margin-left: -67px;
+          margin-bottom: -26px;
+        }
       }
 
       .third-pricing {
@@ -583,6 +1082,17 @@ p {
         min-width: 190px;
         font-style: normal;
         margin: 32px 0 53px 0;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 14px;
+          letter-spacing: 0;
+          min-height: 12px;
+          min-width: 116px;
+          font-style: normal;
+          margin-right: 35px;
+        }
       }
 
       .second-sec {
@@ -596,6 +1106,18 @@ p {
         padding: 50px;
         margin-top: -50px;
         margin-bottom: -7px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 16px;
+          letter-spacing: 0;
+          min-height: 28px;
+          min-width: 184px;
+          font-style: normal;
+          padding: 20px;
+          margin-left: -35px;
+        }
       }
     }
 
@@ -631,6 +1153,19 @@ p {
         list-style-type: none;
         padding: 10px;
         position: relative;
+        color: #fff;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 24px;
+          letter-spacing: 0;
+          min-width: 127px;
+          font-style: normal;
+          text-align: left;
+          padding: 10px;
+          margin-left: 50px;
+        }
 
         &::before {
           content: "";
@@ -642,6 +1177,20 @@ p {
           background-size: contain;
           margin-left: 50px;
           margin-top: 5px;
+          color: #fff;
+
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            ontent: "";
+            left: -3em;
+            position: absolute;
+            width: 14px;
+            height: 11px;
+            background-image: url("../images/check-list.png");
+            background-size: contain;
+            margin-left: 20px;
+            margin-top: 6px;
+            color: #fff;
+          }
         }
       }
     }
@@ -827,10 +1376,10 @@ p {
 
     .first-end-container {
       p {
-      color: #7E92AC;
-    }
+        color: #7e92ac;
+      }
       .first-end {
-      color: #7E92AC;
+        color: #7e92ac;
       }
     }
 
@@ -853,7 +1402,7 @@ p {
 
       a {
         text-decoration: none;
-        color: #7E92AC;
+        color: #7e92ac;
       }
     }
   }
@@ -866,11 +1415,14 @@ p {
       min-width: 562px;
       min-height: 71px;
       border-style: none;
-      border:1px solid #7e92AC;
+      border: 1px solid #7e92ac;
     }
 
     .subscribe {
-      background: #FEB301;
+      background: #feb301;
+      min-height: 72px;
+      min-width: 219px;
+      border-radius: 10%;
     }
   }
 }
@@ -922,17 +1474,8 @@ p {
   }
 }
 
-
 .mobile-menu {
   float: right;
-  margin: .5em;
+  margin: 0.5em;
   cursor: pointer;
-}
-
-@media only screen and (min-width:768px) {
-
-    .mobile-menu, .mobile-menu-exit {
-      display: none;
-    }
- 
 }

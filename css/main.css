@@ -32,8 +32,23 @@ body {
   }
 }
 
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .navbar a {
   text-decoration: none;
+}
+
+.navbar nav {
+  display: block;
+  margin-right: -130px;
+  margin-left: 160px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -45,25 +60,31 @@ body {
 .navbar .s-logo img {
   width: 66.38px;
   height: 79.26px;
+  margin-left: -50px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .navbar .s-logo img {
     width: 39px;
     height: 46.57px;
+    margin-left: 0px;
   }
 }
 
-.navbar .s-logo span {
+.navbar p {
   font-weight: 600;
   font-size: 39px;
   min-height: 46px;
   min-width: 199px;
+  line-height: 46px;
+  text-align: left;
   color: #ffff;
+  margin-left: 10px;
+  margin-top: 17px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .navbar .s-logo span {
+  .navbar p {
     display: none;
   }
 }
@@ -74,7 +95,8 @@ body {
   display: flex;
   color: #ffff;
   place-content: flex-end;
-  margin-top: -20px;
+  margin-top: 34px;
+  padding: 0;
 }
 
 .navbar ul.header .register {
@@ -183,7 +205,7 @@ p {
 .laptop {
   padding: 50px;
   text-align: center;
-  margin-top: -500px;
+  margin-top: -230px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -199,7 +221,7 @@ p {
 
 .inkyy {
   text-align: center;
-  margin-top: -205px;
+  margin-top: -110px;
   padding: 50px;
 }
 
@@ -322,6 +344,10 @@ p {
   }
 }
 
+.second-section .container {
+  height: 1006px;
+}
+
 .second-section .why-us-subhead {
   padding: 50px;
   font-size: 64px;
@@ -361,18 +387,22 @@ p {
 .second-section .why-us-subhead-desc {
   font-size: 20px;
   font-weight: 300;
-  min-width: 584px;
+  width: 584px;
   min-height: 52px;
   letter-spacing: 0;
   line-height: 32px;
   color: #7e92ac;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: inline-table;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .second-section .why-us-subhead-desc {
     font-size: 12px;
     font-weight: 300;
-    min-width: 302px;
+    width: 302px;
     min-height: 26px;
     letter-spacing: 0;
     line-height: 14px;
@@ -391,6 +421,7 @@ p {
           flex-direction: row;
   min-height: 1000px;
   min-width: 1920px;
+  margin-left: 200px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -400,11 +431,12 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-left: 0;
   }
 }
 
 .second-section .why-us {
-  margin: 16px;
+  margin: 40px;
   height: 431px;
   width: 414px;
   background: #fbfcfe;
@@ -433,8 +465,8 @@ p {
   text-align: left;
   width: 38.86px;
   height: 38.86px;
-  margin-bottom: -49px;
-  margin-top: 25px;
+  margin-bottom: -20px;
+  margin-top: 23px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -484,7 +516,7 @@ p {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0;
-    min-width: 156px;
+    min-width: px;
     min-height: 92px;
   }
 }
@@ -493,7 +525,7 @@ p {
   width: 812px;
   height: 583px;
   border-radius: 20px;
-  margin-left: -248px;
+  margin-left: 210px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,11 +549,23 @@ p {
 
 .third-section .structure {
   display: block;
+  margin-left: 50px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .third-section .structure {
     width: 375px;
+    margin-left: 0;
+  }
+}
+
+.third-section .structure .button {
+  margin-left: -27px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .third-section .structure .button {
+    margin-left: 0;
   }
 }
 
@@ -1008,6 +1052,47 @@ p {
   }
 }
 
+.pricing-plan .pricing-desc {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  width: 763px;
+  height: 52px;
+  margin-left: 580px;
+  margin-top: -40px;
+  margin-bottom: 110px;
+  letter-spacing: 0;
+  text-align: center;
+  font-style: normal;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-desc {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    width: 302px;
+    height: 44px;
+    margin-left: 0px;
+    margin-top: -80px;
+    margin-bottom: 25px;
+    letter-spacing: 0;
+    text-align: center;
+    font-style: normal;
+  }
+}
+
+.pricing-plan .arrow {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .arrow {
+    display: block;
+    margin: 84px 0 0px 70px;
+  }
+}
+
 .pricing-plan .pricing {
   padding: 50px;
   font-size: 64px;
@@ -1093,6 +1178,15 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 70px;
+  width: 440px;
+  margin-right: 70px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .second-pricing-container {
+    margin: 0;
+  }
 }
 
 .pricing-plan .pricing-container .third-pricing-container {
@@ -1100,6 +1194,8 @@ p {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  width: 440px;
+  height: 731px;
 }
 
 .pricing-plan .pricing-container .pricing1 {
@@ -1124,6 +1220,20 @@ p {
   min-height: 30px;
   min-width: 97px;
   font-weight: 300;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 .level-1 {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-style: normal;
+    min-height: 18px;
+    min-width: 58px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    margin-left: -40px;
+  }
 }
 
 .pricing-plan .pricing-container .pricing1 .level-2 {
@@ -1160,6 +1270,20 @@ p {
   font-weight: 300;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 .level-3 {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-style: normal;
+    min-height: 18px;
+    min-width: 58px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    margin-left: -40px;
+  }
+}
+
 .pricing-plan .pricing-container .pricing1 .first-pricing {
   font-weight: 300;
   font-size: 84px;
@@ -1169,6 +1293,20 @@ p {
   min-width: 140px;
   font-style: normal;
   margin: -30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 .first-pricing {
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 31px;
+    letter-spacing: 0;
+    min-height: 26px;
+    min-width: 43px;
+    font-style: normal;
+    margin-left: -67px;
+    margin-bottom: -26px;
+  }
 }
 
 .pricing-plan .pricing-container .pricing1 .second-pricing {
@@ -1207,6 +1345,20 @@ p {
   margin: -30px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 .third-pricing {
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 31px;
+    letter-spacing: 0;
+    min-height: 26px;
+    min-width: 43px;
+    font-style: normal;
+    margin-left: -67px;
+    margin-bottom: -26px;
+  }
+}
+
 .pricing-plan .pricing-container .pricing1 .first {
   font-size: 20px;
   font-weight: 300;
@@ -1220,6 +1372,19 @@ p {
   color: #000000;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 .first {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0;
+    min-height: 12px;
+    min-width: 116px;
+    font-style: normal;
+    margin-right: 35px;
+  }
+}
+
 .pricing-plan .pricing-container .pricing1 .second {
   font-size: 20px;
   font-weight: 300;
@@ -1231,6 +1396,20 @@ p {
   padding: 50px;
   margin-top: -50px;
   margin-bottom: -7px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 .second {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0;
+    min-height: 28px;
+    min-width: 184px;
+    font-style: normal;
+    padding: 20px;
+    margin-left: -35px;
+  }
 }
 
 .pricing-plan .pricing-container .pricing1 .hex {
@@ -1279,14 +1458,22 @@ p {
     min-height: 28px;
     min-width: 184px;
     font-style: normal;
-    padding: 20px;
+    padding: 45px;
     margin-left: -35px;
+    margin-top: -72px;
   }
 }
 
 .pricing-plan .pricing-container .pricing-level-1 {
   background: #fcfdff;
   color: #000000;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing-level-1 {
+    width: 242px;
+    height: 423px;
+  }
 }
 
 .pricing-plan .pricing-container .pricing-level-2 {
@@ -1298,12 +1485,25 @@ p {
   color: #000000;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing-level-3 {
+    width: 242px;
+    height: 423px;
+  }
+}
+
 .pricing-plan .pricing-container .pricing1 .text {
   color: #7e92ac;
 }
 
 .pricing-plan .pricing-container .pricing1 .button-b {
   margin: 40px 0 0 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .pricing-plan .pricing-container .pricing1 .button-b {
+    margin: 25px 28px 0 0;
+  }
 }
 
 .pricing-plan .pricing-container .pricing1 li {
@@ -1361,28 +1561,10 @@ p {
   }
 }
 
-.faq h6 {
-  font-size: 30px;
-  font-weight: 500;
-  text-align: left;
-  letter-spacing: 0;
-  min-width: 482px;
-  min-height: 30px;
-  margin-left: -170px;
-  padding: 0;
-  background: #fff;
-}
-
-.faq p {
-  font-size: 16px;
-  font-weight: 300;
-  text-align: left;
-  letter-spacing: 0;
-  min-width: 538px;
-  min-height: 64px;
-  padding: 0;
-  margin-left: -170px;
-  margin-top: -65px;
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .faq .container {
+    width: 376px;
+  }
 }
 
 .faq .container .faq-container {
@@ -1393,6 +1575,23 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 1364px;
+  height: 536px;
+  margin-left: 140px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .faq .container .faq-container {
+    width: 376px;
+    height: 674px;
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .faq .container .faq-container .faq-second-list {
+    display: none;
+  }
 }
 
 .faq .container ul.faq-list li {
@@ -1403,8 +1602,19 @@ p {
   margin-left: 150px;
   margin-top: -15px;
   list-style-type: none;
-  padding: 10px;
   position: relative;
+  width: 538px;
+  height: 64px;
+  padding: 60px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .faq .container ul.faq-list li {
+    margin-left: 188px;
+    padding: 30px;
+    width: 256px;
+    height: 76px;
+  }
 }
 
 .faq .container ul.faq-list li::before {
@@ -1419,7 +1629,68 @@ p {
   margin-top: 62px;
 }
 
-.faq .container .faq-header {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .faq .container ul.faq-list li::before {
+    margin-left: 14px;
+    margin-top: -9px;
+    width: 50px;
+    height: 47px;
+  }
+}
+
+.faq .container ul.faq-list li h6 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 0;
+  min-width: 482px;
+  min-height: 30px;
+  margin-left: -170px;
+  padding: 0;
+  background: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .faq .container ul.faq-list li h6 {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0;
+    min-width: 237px;
+    min-height: 15px;
+    margin-left: -170px;
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+.faq .container ul.faq-list li p {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 0;
+  min-width: 538px;
+  min-height: 64px;
+  padding: 0;
+  margin-left: -170px;
+  margin-top: -65px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .faq .container ul.faq-list li p {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0;
+    min-width: 302px;
+    min-height: 44px;
+    font-style: normal;
+    margin: -62px 0 0 -224px;
+    padding: 38px;
+  }
+}
+
+.faq .faq-header {
   text-align: center;
   font-size: 64px;
   font-weight: 400;
@@ -1430,15 +1701,44 @@ p {
   padding: 50px;
 }
 
-.faq .container p.faq-desc {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .faq .faq-header {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0;
+    min-width: 208px;
+    min-height: 57px;
+    margin-left: -5px;
+    padding: 35px;
+  }
+}
+
+.faq .faq-desc {
   text-align: center;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0;
-  min-width: 763px;
-  min-height: 52px;
+  width: 763px;
+  height: 52px;
   font-style: normal;
-  margin: 0;
+  margin: 0 0 0 570px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .faq .faq-desc {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0;
+    width: 302px;
+    height: 44px;
+    font-style: normal;
+    margin-top: -70px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    padding: 38px;
+  }
 }
 
 .drop-message h2 {
@@ -1447,15 +1747,42 @@ p {
   line-height: 77px;
   min-height: 64px;
   min-width: 470px;
+  padding: 50px;
   text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .drop-message h2 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31px;
+    min-height: 26px;
+    min-width: 191px;
+  }
 }
 
 .drop-message p {
   text-align: center;
   font-size: 20px;
   font-weight: 300;
-  min-width: 669px;
+  width: 669px;
+  height: 52px;
   letter-spacing: 0;
+  margin-left: 630px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .drop-message p {
+    font-size: 12px;
+    font-weight: 300;
+    min-width: 302px;
+    min-height: 44px;
+    letter-spacing: 0;
+    padding: 35px;
+    margin-top: -30px;
+    margin-bottom: 65px;
+    margin-top: -30px;
+  }
 }
 
 .drop-message .container {
@@ -1468,11 +1795,19 @@ p {
 
 .drop-message input.button {
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .drop-message .contact-form {
   width: 704px;
-  margin: 0 58px 0 200px;
+  margin-left: 630px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .drop-message .contact-form {
+    width: 222px;
+    margin: 0 0 0 80px;
+  }
 }
 
 .drop-message .contact-form .email-holder {
@@ -1486,10 +1821,33 @@ p {
   margin-top: 20px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .drop-message .contact-form .email-holder {
+    height: 36px;
+    position: relative;
+  }
+}
+
+.drop-message .contact-form .message {
+  height: 279px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .drop-message .contact-form .message {
+    height: 143px;
+  }
+}
+
 .second-fourth-section {
   background: #6837fa;
   position: relative;
-  height: 629px;
+  height: 642px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-fourth-section {
+    height: 251px;
+  }
 }
 
 .second-fourth-section .second-top-purple-curve {
@@ -1499,6 +1857,19 @@ p {
   top: 0;
   left: 0;
   right: 0;
+  border-top-left-radius: 80% 20%;
+  border-top-right-radius: 80% 20%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-fourth-section .second-top-purple-curve {
+    height: 276.62px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
 .second-fourth-section .second-bottom-white-curve {
@@ -1506,8 +1877,24 @@ p {
   background-color: #5b2aee;
   position: absolute;
   bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
+  border-top-left-radius: 80% 20%;
+  border-top-right-radius: 80% 20%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-fourth-section .second-bottom-white-curve {
+    height: 276.62px;
+    background-color: #5b2aee;
+    position: absolute;
+    top: 31px;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 80% 20%;
+    border-top-right-radius: 80% 20%;
+  }
 }
 
 .second-fourth-section .container {
@@ -1515,17 +1902,80 @@ p {
   color: #fff;
   text-align: center;
   width: 734px;
-  height: 312px;
   padding: 0;
 }
 
-.second-fourth-section .container .content-tittle {
-  text-align: center;
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-fourth-section .container {
+    width: 251px;
+  }
+}
+
+.second-fourth-section .container .content-tittle-2 {
+  padding: 50px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-fourth-section .container .content-tittle-2 {
+    padding: 0;
+  }
+}
+
+.second-fourth-section .container .content-tittle-2 h1 {
+  text-align: left;
   font-weight: 300;
   font-size: 36px;
   margin-bottom: -6px;
-  padding: 5px;
+  padding: 50px;
   margin-top: 40px;
+  margin-left: 130px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-fourth-section .container .content-tittle-2 h1 {
+    font-size: 26px;
+    min-height: 26px;
+    min-width: 244px;
+    line-height: 31px;
+    text-align: left;
+    padding: 60px;
+    margin-left: -58px;
+  }
+}
+
+.second-fourth-section .container .content-desc-2 p {
+  font-size: 20px;
+  font-weight: 300;
+  min-width: 734px;
+  min-height: 52px;
+  text-align: center;
+  line-height: 32px;
+  margin-left: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-fourth-section .container .content-desc-2 p {
+    font-size: 12px;
+    font-weight: 300;
+    min-width: 272px;
+    min-height: 44px;
+    text-align: center;
+    line-height: 16px;
+    margin-top: -26px;
+    margin-left: -12px;
+  }
+}
+
+.second-fourth-section .container .content-button-b {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .second-fourth-section .container .content-button-b {
+    margin-top: 55px;
+    margin-left: -10px;
+  }
 }
 
 .ending .container {
@@ -1533,6 +1983,15 @@ p {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  margin-left: 260px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .ending .container {
+    display: -ms-grid;
+    display: grid;
+    margin-left: 0;
+  }
 }
 
 .ending .container h6 {
@@ -1540,27 +1999,88 @@ p {
   font-weight: 300;
   line-height: 36px;
   min-height: 30px;
-  min-width: 236px;
   text-align: left;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .ending .container h6 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    min-height: 15px;
+  }
+}
+
+.ending .container .first-end-container {
+  margin-left: 50px;
+  width: 310px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .ending .container .first-end-container {
+    margin-top: 60px;
+    width: 145px;
+    margin-left: 30px;
+  }
 }
 
 .ending .container .first-end-container p {
   color: #7e92ac;
+  text-align: left;
+  margin-left: 0;
+  font-size: 20px;
+  font-weight: 300;
+  min-width: 310px;
+  min-height: 244px;
+  line-height: 32px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .ending .container .first-end-container p {
+    margin-left: 0;
+    font-size: 12px;
+    font-weight: 300;
+    min-width: 145px;
+    min-height: 156px;
+    line-height: 16px;
+    text-align: left;
+  }
 }
 
 .ending .container .first-end-container .first-end {
   color: #7e92ac;
+  margin-bottom: -100px;
 }
 
-.ending .container .second-end {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .ending .container .first-end-container .first-end {
+    margin-bottom: -55px;
+  }
+}
+
+.ending .container .second-end-container {
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 200px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .ending .container .second-end-container {
+    margin-top: -345px;
+    margin-left: 58px;
+    margin-right: 0;
+  }
+}
+
+.ending .container .second-end-container .second-end {
   margin-left: 190px;
 }
 
-.ending .container p {
+.ending .container .second-end-container p {
   text-align: left;
 }
 
-.ending .container li {
+.ending .container .second-end-container li {
   list-style-type: none;
   text-decoration: none;
   list-style: none;
@@ -1570,13 +2090,53 @@ p {
   padding: 8px;
 }
 
-.ending .container li a {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .ending .container .second-end-container li {
+    padding: 6px;
+    margin-top: -7px;
+  }
+}
+
+.ending .container .second-end-container li a {
   text-decoration: none;
   color: #7e92ac;
 }
 
+.third-end-container {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .third-end-container {
+    margin-top: -90px;
+  }
+}
+
+.third-end-container .third-end-tittle {
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .third-end-container .third-end-tittle {
+    margin-left: 30px;
+  }
+}
+
 .third-end-container .email-box {
   background: #fff;
+  margin: 0;
+  height: 71px;
+  min-width: 562px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .third-end-container .email-box {
+    min-width: 302px;
+    height: 36px;
+    border-radius: 5%;
+    margin-left: -10px;
+    margin-top: -15px;
+  }
 }
 
 .third-end-container .email-box .email {
@@ -1585,13 +2145,64 @@ p {
   min-height: 71px;
   border-style: none;
   border: 1px solid #7e92ac;
+  border-radius: 5px;
 }
 
-.third-end-container .email-box .subscribe {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .third-end-container .email-box .email {
+    min-width: 302.5px;
+    min-height: 36px;
+    border-radius: 5px;
+    padding: 0;
+  }
+}
+
+.third-end-container .email-box .subs {
+  margin: -58px 0 0 345px;
+  min-width: 219px;
+  min-height: 72px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .third-end-container .email-box .subs {
+    margin: -32px 0 0 195px;
+    min-width: 121.4px;
+    min-height: 36px;
+  }
+}
+
+.third-end-container .email-box .subs a {
+  font-size: 20px;
+  min-height: 20px;
+  min-width: 116px;
+  text-align: left;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .third-end-container .email-box .subs a {
+    font-size: 12px;
+    min-height: 12px;
+    min-width: 69px;
+    text-align: left;
+    line-height: 14px;
+    font-weight: 400;
+  }
+}
+
+.third-end-container .email-box .subs .subscribe {
   background: #feb301;
   min-height: 72px;
   min-width: 219px;
-  border-radius: 10%;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .third-end-container .email-box .subs .subscribe {
+    min-width: 121.4px;
+    min-height: 36px;
+  }
 }
 
 .social-icons {
@@ -1600,6 +2211,15 @@ p {
   display: flex;
   padding: 10px;
   margin-top: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .social-icons {
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .social-icons .si-icon {
@@ -1626,6 +2246,14 @@ p {
   list-style: none;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .social-icons .si-icon {
+    min-width: 26px;
+    min-height: 26px;
+    margin: 5px;
+  }
+}
+
 .social-icons .si-icon .fa {
   font-size: 16px;
 }
@@ -1644,11 +2272,35 @@ p {
   color: #fff;
 }
 
+.footer-end .crdts {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .footer-end .crdts {
+    font-size: 14px;
+    font-weight: 300;
+    min-width: 375px;
+    min-height: 14px;
+    line-height: 17px;
+    margin-left: 42px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 .footer-end .footer {
   list-style-type: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .footer-end .footer {
+    display: none;
+  }
 }
 
 .footer-end .footer li {
@@ -1664,8 +2316,17 @@ p {
 }
 
 .mobile-menu {
-  float: right;
-  margin: 0.5em;
-  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .mobile-menu {
+    float: right;
+    margin-left: 280px;
+    cursor: pointer;
+    display: block;
+    width: 26px;
+    height: 22px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -25,11 +25,20 @@ body {
     width: auto;
   }
 
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
   a {
     text-decoration: none;
   }
 
   nav {
+    display: block;
+    margin-right: -130px;
+    margin-left: 160px;
+
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       display: none;
     }
@@ -39,22 +48,29 @@ body {
     img {
       width: 66.38px;
       height: 79.26px;
+      margin-left: -50px;
+
       @media only screen and (min-width: 320px) and (max-width: 480px) {
         width: 39px;
         height: 46.57px;
+        margin-left: 0px;
       }
     }
+  }
 
-    span {
-      font-weight: 600;
-      font-size: 39px;
-      min-height: 46px;
-      min-width: 199px;
-      color: #ffff;
+  p {
+    font-weight: 600;
+    font-size: 39px;
+    min-height: 46px;
+    min-width: 199px;
+    line-height: 46px;
+    text-align: left;
+    color: #ffff;
+    margin-left: 10px;
+    margin-top: 17px;
 
-      @media only screen and (min-width: 320px) and (max-width: 480px) {
-        display: none;
-      }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      display: none;
     }
   }
 
@@ -62,7 +78,8 @@ body {
     display: flex;
     color: #ffff;
     place-content: flex-end;
-    margin-top: -20px;
+    margin-top: 34px;
+    padding: 0;
 
     .register {
       background: #572bd9;
@@ -156,7 +173,7 @@ p {
 .laptop {
   padding: 50px;
   text-align: center;
-  margin-top: -500px;
+  margin-top: -230px;
 
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     padding: 0;
@@ -169,7 +186,7 @@ p {
 }
 .inkyy {
   text-align: center;
-  margin-top: -205px;
+  margin-top: -110px;
   padding: 50px;
 
   @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -274,6 +291,10 @@ p {
     min-height: 457px;
   }
 
+  .container {
+    height: 1006px;
+  }
+
   .why-us-subhead {
     padding: 50px;
     font-size: 64px;
@@ -307,16 +328,18 @@ p {
   .why-us-subhead-desc {
     font-size: 20px;
     font-weight: 300;
-    min-width: 584px;
+    width: 584px;
     min-height: 52px;
     letter-spacing: 0;
     line-height: 32px;
     color: #7e92ac;
+    justify-content: center;
+    display: inline-table;
 
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       font-size: 12px;
       font-weight: 300;
-      min-width: 302px;
+      width: 302px;
       min-height: 26px;
       letter-spacing: 0;
       line-height: 14px;
@@ -330,16 +353,18 @@ p {
     flex-direction: row;
     min-height: 1000px;
     min-width: 1920px;
+    margin-left: 200px;
 
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       min-width: 221px;
       min-height: 236px;
       justify-content: center;
+      margin-left: 0;
     }
   }
 
   .why-us {
-    margin: 16px;
+    margin: 40px;
     height: 431px;
     width: 414px;
     background: #fbfcfe;
@@ -363,8 +388,8 @@ p {
         text-align: left;
         width: 38.86px;
         height: 38.86px;
-        margin-bottom: -49px;
-        margin-top: 25px;
+        margin-bottom: -20px;
+        margin-top: 23px;
 
         @media only screen and (min-width: 320px) and (max-width: 480px) {
           width: 19.18px;
@@ -406,7 +431,7 @@ p {
             font-size: 12px;
             line-height: 16px;
             letter-spacing: 0;
-            min-width: 156px;
+            min-width: px;
             min-height: 92px;
           }
         }
@@ -422,7 +447,7 @@ p {
     width: 812px;
     height: 583px;
     border-radius: 20px;
-    margin-left: -248px;
+    margin-left: 210px;
     display: flex;
 
     @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -441,9 +466,19 @@ p {
 
   .structure {
     display: block;
+    margin-left: 50px;
 
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       width: 375px;
+      margin-left: 0;
+    }
+
+    .button {
+      margin-left: -27px;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        margin-left: 0;
+      }
     }
     h6 {
       line-height: 77px;
@@ -873,6 +908,43 @@ p {
     min-width: 376px;
     min-height: 780px;
   }
+
+  .pricing-desc {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    width: 763px;
+    height: 52px;
+    margin-left: 580px;
+    margin-top: -40px;
+    margin-bottom: 110px;
+    letter-spacing: 0;
+    text-align: center;
+    font-style: normal;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 16px;
+      width: 302px;
+      height: 44px;
+      margin-left: 0px;
+      margin-top: -80px;
+      margin-bottom: 25px;
+      letter-spacing: 0;
+      text-align: center;
+      font-style: normal;
+    }
+  }
+
+  .arrow {
+    display: none;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      display: block;
+      margin: 84px 0 0px 70px;
+    }
+  }
   .pricing {
     padding: 50px;
     font-size: 64px;
@@ -944,11 +1016,20 @@ p {
     .second-pricing-container {
       position: relative;
       display: flex;
+      margin-left: 70px;
+      width: 440px;
+      margin-right: 70px;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        margin: 0;
+      }
     }
 
     .third-pricing-container {
       display: flex;
       position: relative;
+      width: 440px;
+      height: 731px;
     }
     .pricing1 {
       border-radius: 10px;
@@ -969,6 +1050,18 @@ p {
         min-height: 30px;
         min-width: 97px;
         font-weight: 300;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-size: 18px;
+          letter-spacing: 0;
+          line-height: 22px;
+          font-style: normal;
+          min-height: 18px;
+          min-width: 58px;
+          font-weight: 300;
+          margin-bottom: 50px;
+          margin-left: -40px;
+        }
       }
 
       .level-2 {
@@ -1001,6 +1094,18 @@ p {
         min-height: 30px;
         min-width: 97px;
         font-weight: 300;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-size: 18px;
+          letter-spacing: 0;
+          line-height: 22px;
+          font-style: normal;
+          min-height: 18px;
+          min-width: 58px;
+          font-weight: 300;
+          margin-bottom: 50px;
+          margin-left: -40px;
+        }
       }
 
       .first-pricing {
@@ -1012,6 +1117,18 @@ p {
         min-width: 140px;
         font-style: normal;
         margin: -30px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-weight: 300;
+          font-size: 23px;
+          line-height: 31px;
+          letter-spacing: 0;
+          min-height: 26px;
+          min-width: 43px;
+          font-style: normal;
+          margin-left: -67px;
+          margin-bottom: -26px;
+        }
       }
 
       .second-pricing {
@@ -1046,6 +1163,18 @@ p {
         min-width: 140px;
         font-style: normal;
         margin: -30px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-weight: 300;
+          font-size: 23px;
+          line-height: 31px;
+          letter-spacing: 0;
+          min-height: 26px;
+          min-width: 43px;
+          font-style: normal;
+          margin-left: -67px;
+          margin-bottom: -26px;
+        }
       }
 
       .first {
@@ -1059,6 +1188,17 @@ p {
         margin: 32px 0 53px 0;
         background: #fff;
         color: #000000;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 14px;
+          letter-spacing: 0;
+          min-height: 12px;
+          min-width: 116px;
+          font-style: normal;
+          margin-right: 35px;
+        }
       }
 
       .second {
@@ -1072,6 +1212,18 @@ p {
         padding: 50px;
         margin-top: -50px;
         margin-bottom: -7px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 16px;
+          letter-spacing: 0;
+          min-height: 28px;
+          min-width: 184px;
+          font-style: normal;
+          padding: 20px;
+          margin-left: -35px;
+        }
       }
       .hex {
         font-size: 20px;
@@ -1115,8 +1267,9 @@ p {
           min-height: 28px;
           min-width: 184px;
           font-style: normal;
-          padding: 20px;
+          padding: 45px;
           margin-left: -35px;
+          margin-top: -72px;
         }
       }
     }
@@ -1124,6 +1277,11 @@ p {
     .pricing-level-1 {
       background: #fcfdff;
       color: #000000;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        width: 242px;
+        height: 423px;
+      }
     }
 
     .pricing-level-2 {
@@ -1133,6 +1291,11 @@ p {
     .pricing-level-3 {
       background: #fcfdff;
       color: #000000;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        width: 242px;
+        height: 423px;
+      }
     }
 
     .pricing1 {
@@ -1142,6 +1305,10 @@ p {
 
       .button-b {
         margin: 40px 0 0 0;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          margin: 25px 28px 0 0;
+        }
       }
       li {
         font-size: 20px;
@@ -1198,32 +1365,27 @@ p {
 }
 
 .faq {
-  h6 {
-    font-size: 30px;
-    font-weight: 500;
-    text-align: left;
-    letter-spacing: 0;
-    min-width: 482px;
-    min-height: 30px;
-    margin-left: -170px;
-    padding: 0;
-    background: #fff;
-  }
-  p {
-    font-size: 16px;
-    font-weight: 300;
-    text-align: left;
-    letter-spacing: 0;
-    min-width: 538px;
-    min-height: 64px;
-    padding: 0;
-    margin-left: -170px;
-    margin-top: -65px;
-  }
   .container {
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      width: 376px;
+    }
     .faq-container {
       display: flex;
       flex-direction: row;
+      width: 1364px;
+      height: 536px;
+      margin-left: 140px;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        width: 376px;
+        height: 674px;
+        margin-left: -20px;
+      }
+      .faq-second-list {
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          display: none;
+        }
+      }
     }
     ul.faq-list {
       li {
@@ -1234,8 +1396,17 @@ p {
         margin-left: 150px;
         margin-top: -15px;
         list-style-type: none;
-        padding: 10px;
         position: relative;
+        width: 538px;
+        height: 64px;
+        padding: 60px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          margin-left: 188px;
+          padding: 30px;
+          width: 256px;
+          height: 76px;
+        }
 
         &::before {
           content: "";
@@ -1247,29 +1418,110 @@ p {
           background-size: contain;
           margin-left: -4px;
           margin-top: 62px;
+
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            margin-left: 14px;
+            margin-top: -9px;
+            width: 50px;
+            height: 47px;
+          }
+        }
+
+        h6 {
+          font-size: 30px;
+          font-weight: 500;
+          text-align: left;
+          letter-spacing: 0;
+          min-width: 482px;
+          min-height: 30px;
+          margin-left: -170px;
+          padding: 0;
+          background: #fff;
+
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            font-size: 15px;
+            font-weight: 600;
+            text-align: left;
+            letter-spacing: 0;
+            min-width: 237px;
+            min-height: 15px;
+            margin-left: -170px;
+            padding: 0;
+            margin-top: 0;
+          }
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 300;
+          text-align: left;
+          letter-spacing: 0;
+          min-width: 538px;
+          min-height: 64px;
+          padding: 0;
+          margin-left: -170px;
+          margin-top: -65px;
+
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            text-align: left;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 0;
+            min-width: 302px;
+            min-height: 44px;
+            font-style: normal;
+            margin: -62px 0 0 -224px;
+            padding: 38px;
+          }
         }
       }
     }
-    .faq-header {
-      text-align: center;
-      font-size: 64px;
-      font-weight: 400;
-      letter-spacing: 0;
-      min-width: 800px;
-      min-height: 64px;
-      font-style: normal;
-      padding: 50px;
-    }
+  }
 
-    p.faq-desc {
+  .faq-header {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 0;
+    min-width: 800px;
+    min-height: 64px;
+    font-style: normal;
+    padding: 50px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      font-size: 26px;
+      font-weight: 500;
       text-align: center;
-      font-size: 16px;
+      letter-spacing: 0;
+      min-width: 208px;
+      min-height: 57px;
+      margin-left: -5px;
+      padding: 35px;
+    }
+  }
+
+  .faq-desc {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+    width: 763px;
+    height: 52px;
+    font-style: normal;
+    margin: 0 0 0 570px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      text-align: center;
+      font-size: 12px;
       font-weight: 300;
       letter-spacing: 0;
-      min-width: 763px;
-      min-height: 52px;
+      width: 302px;
+      height: 44px;
       font-style: normal;
-      margin: 0;
+      margin-top: -70px;
+      margin-left: 0px;
+      margin-bottom: 20px;
+      padding: 38px;
     }
   }
 }
@@ -1281,15 +1533,38 @@ p {
     line-height: 77px;
     min-height: 64px;
     min-width: 470px;
+    padding: 50px;
     text-align: center;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 31px;
+      min-height: 26px;
+      min-width: 191px;
+    }
   }
 
   p {
     text-align: center;
     font-size: 20px;
     font-weight: 300;
-    min-width: 669px;
+    width: 669px;
+    height: 52px;
     letter-spacing: 0;
+    margin-left: 630px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      font-size: 12px;
+      font-weight: 300;
+      min-width: 302px;
+      min-height: 44px;
+      letter-spacing: 0;
+      padding: 35px;
+      margin-top: -30px;
+      margin-bottom: 65px;
+      margin-top: -30px;
+    }
   }
   .container {
     text-align: center;
@@ -1301,11 +1576,17 @@ p {
 
   input.button {
     margin-top: 30px;
+    margin-bottom: 50px;
   }
 
   .contact-form {
     width: 704px;
-    margin: 0 58px 0 200px;
+    margin-left: 630px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      width: 222px;
+      margin: 0 0 0 80px;
+    }
 
     .email-holder {
       border-radius: 10px;
@@ -1316,13 +1597,29 @@ p {
       display: block;
       text-align: left;
       margin-top: 20px;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        height: 36px;
+        position: relative;
+      }
+    }
+
+    .message {
+      height: 279px;
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        height: 143px;
+      }
     }
   }
 }
 .second-fourth-section {
   background: #6837fa;
   position: relative;
-  height: 629px;
+  height: 642px;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    height: 251px;
+  }
 
   .second-top-purple-curve {
     height: 400px;
@@ -1331,6 +1628,17 @@ p {
     top: 0;
     left: 0;
     right: 0;
+    border-top-left-radius: 80% 20%;
+    border-top-right-radius: 80% 20%;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      height: 276.62px;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
   }
 
   .second-bottom-white-curve {
@@ -1338,8 +1646,22 @@ p {
     background-color: #5b2aee;
     position: absolute;
     bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
+    border-top-left-radius: 80% 20%;
+    border-top-right-radius: 80% 20%;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      height: 276.62px;
+      background-color: #5b2aee;
+      position: absolute;
+      top: 31px;
+      left: 0;
+      right: 0;
+      border-top-left-radius: 80% 20%;
+      border-top-right-radius: 80% 20%;
+    }
   }
 
   .container {
@@ -1347,16 +1669,69 @@ p {
     color: #fff;
     text-align: center;
     width: 734px;
-    height: 312px;
     padding: 0;
 
-    .content-tittle {
-      text-align: center;
-      font-weight: 300;
-      font-size: 36px;
-      margin-bottom: -6px;
-      padding: 5px;
-      margin-top: 40px;
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      width: 251px;
+    }
+
+    .content-tittle-2 {
+      padding: 50px;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        padding: 0;
+      }
+      h1 {
+        text-align: left;
+        font-weight: 300;
+        font-size: 36px;
+        margin-bottom: -6px;
+        padding: 50px;
+        margin-top: 40px;
+        margin-left: 130px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-size: 26px;
+          min-height: 26px;
+          min-width: 244px;
+          line-height: 31px;
+          text-align: left;
+          padding: 60px;
+          margin-left: -58px;
+        }
+      }
+    }
+
+    .content-desc-2 {
+      p {
+        font-size: 20px;
+        font-weight: 300;
+        min-width: 734px;
+        min-height: 52px;
+        text-align: center;
+        line-height: 32px;
+        margin-left: 30px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-size: 12px;
+          font-weight: 300;
+          min-width: 272px;
+          min-height: 44px;
+          text-align: center;
+          line-height: 16px;
+          margin-top: -26px;
+          margin-left: -12px;
+        }
+      }
+    }
+
+    .content-button-b {
+      margin-left: 100px;
+      margin-top: 100px;
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        margin-top: 55px;
+        margin-left: -10px;
+      }
     }
   }
 }
@@ -1365,64 +1740,183 @@ p {
   .container {
     display: flex;
     text-align: center;
+    margin-left: 260px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      display: grid;
+      margin-left: 0;
+    }
     h6 {
       font-size: 30px;
       font-weight: 300;
       line-height: 36px;
       min-height: 30px;
-      min-width: 236px;
       text-align: left;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18px;
+        min-height: 15px;
+      }
     }
 
     .first-end-container {
+      margin-left: 50px;
+      width: 310px;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        margin-top: 60px;
+        width: 145px;
+        margin-left: 30px;
+      }
       p {
         color: #7e92ac;
+        text-align: left;
+        margin-left: 0;
+        font-size: 20px;
+        font-weight: 300;
+        min-width: 310px;
+        min-height: 244px;
+        line-height: 32px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          margin-left: 0;
+          font-size: 12px;
+          font-weight: 300;
+          min-width: 145px;
+          min-height: 156px;
+          line-height: 16px;
+          text-align: left;
+        }
       }
       .first-end {
         color: #7e92ac;
+        margin-bottom: -100px;
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          margin-bottom: -55px;
+        }
       }
     }
 
-    .second-end {
-      margin-left: 190px;
-    }
+    .second-end-container {
+      margin-left: 0;
+      margin-top: 0;
+      margin-right: 200px;
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        margin-top: -345px;
+        margin-left: 58px;
+        margin-right: 0;
+      }
+      .second-end {
+        margin-left: 190px;
+      }
 
-    p {
-      text-align: left;
-    }
+      p {
+        text-align: left;
+      }
 
-    li {
-      list-style-type: none;
-      text-decoration: none;
-      list-style: none;
-      cursor: pointer;
-      margin-left: 150px;
-      text-align: left;
-      padding: 8px;
-
-      a {
+      li {
+        list-style-type: none;
         text-decoration: none;
-        color: #7e92ac;
+        list-style: none;
+        cursor: pointer;
+        margin-left: 150px;
+        text-align: left;
+        padding: 8px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          padding: 6px;
+          margin-top: -7px;
+        }
+        a {
+          text-decoration: none;
+          color: #7e92ac;
+        }
       }
     }
   }
 }
 .third-end-container {
+  margin-top: 0;
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    margin-top: -90px;
+  }
+
+  .third-end-tittle {
+    margin-left: 0;
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      margin-left: 30px;
+    }
+  }
   .email-box {
     background: #fff;
+    margin: 0;
+    height: 71px;
+    min-width: 562px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      min-width: 302px;
+      height: 36px;
+      border-radius: 5%;
+      margin-left: -10px;
+      margin-top: -15px;
+    }
     .email {
       padding: 10px;
       min-width: 562px;
       min-height: 71px;
       border-style: none;
       border: 1px solid #7e92ac;
+      border-radius: 5px;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        min-width: 302.5px;
+        min-height: 36px;
+        border-radius: 5px;
+        padding: 0;
+      }
     }
 
-    .subscribe {
-      background: #feb301;
-      min-height: 72px;
+    .subs {
+      margin: -58px 0 0 345px;
       min-width: 219px;
-      border-radius: 10%;
+      min-height: 72px;
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        margin: -32px 0 0 195px;
+        min-width: 121.4px;
+        min-height: 36px;
+      }
+
+      a {
+        font-size: 20px;
+        min-height: 20px;
+        min-width: 116px;
+        text-align: left;
+        line-height: 24px;
+        font-weight: 400;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          font-size: 12px;
+          min-height: 12px;
+          min-width: 69px;
+          text-align: left;
+          line-height: 14px;
+          font-weight: 400;
+        }
+      }
+      .subscribe {
+        background: #feb301;
+        min-height: 72px;
+        min-width: 219px;
+        border-radius: 5px;
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          min-width: 121.4px;
+          min-height: 36px;
+        }
+      }
     }
   }
 }
@@ -1430,6 +1924,13 @@ p {
   display: flex;
   padding: 10px;
   margin-top: 30px;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
 
   .si-icon {
     display: flex;
@@ -1444,6 +1945,12 @@ p {
     margin: 20px;
     text-decoration: none;
     list-style: none;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      min-width: 26px;
+      min-height: 26px;
+      margin: 5px;
+    }
 
     .fa {
       font-size: 16px;
@@ -1460,9 +1967,28 @@ p {
   justify-content: space-around;
   background: #5b2aee;
   color: #fff;
+
+  .crdts {
+    margin-bottom: 40px;
+    margin-top: 30px;
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      font-size: 14px;
+      font-weight: 300;
+      min-width: 375px;
+      min-height: 14px;
+      line-height: 17px;
+      margin-left: 42px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
   .footer {
     list-style-type: none;
     display: inline-flex;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      display: none;
+    }
     li {
       margin: 15px;
       a {
@@ -1475,7 +2001,14 @@ p {
 }
 
 .mobile-menu {
-  float: right;
-  margin: 0.5em;
-  cursor: pointer;
+  display: none;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    float: right;
+    margin-left: 280px;
+    cursor: pointer;
+    display: block;
+    width: 26px;
+    height: 22px;
+  }
 }
